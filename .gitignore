@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Generated artefacts (produced when notebooks run)
+api_chain_metrics.json
+mcp_react_metrics.json
+react_trace_edge_case.json
+performance_comparison.png
+decision_trace_graph.png
+failure_mode_matrix.png
+
+# IDEs
+.vscode/
+.idea/
