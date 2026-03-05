@@ -91,7 +91,8 @@ python -m ipykernel install --user --name=IntelligentShipmentAdvisor --display-n
 |------|---------------|
 | `infrastructure/logistics_api.py` | FastAPI serving accounts, shipments, carrier status |
 | `infrastructure/weather_api.py` | FastAPI serving weather by city with risk levels |
-| `infrastructure/mcp_server.py` | MCP server wrapping all tools, annotated as tutorial |
+| `infrastructure/logistics_mcp_server.py` | MCP server — internal logistics domain (your system) |
+| `infrastructure/weather_mcp_server.py` | MCP server — weather provider (third-party) |
 
 **Start servers:**
 ```bash
@@ -184,9 +185,10 @@ python infrastructure/weather_mcp_server.py
 LLM_PROVIDER=openai          # or: anthropic
 OPENAI_API_KEY=sk-...
 ANTHROPIC_API_KEY=sk-ant-...
-LOGISTICS_API_URL=http://localhost:8001
-WEATHER_API_URL=http://localhost:8002
 ```
+
+> The mock server URLs (`http://localhost:8001` / `8002`) are hardcoded in the notebooks.
+> If you change ports, update the `LOGISTICS` / `WEATHER` constants in cells 1–2 of each notebook.
 
 ---
 
