@@ -36,7 +36,6 @@ IntelligentShipmentAdvisor/
 │   └── weather_mcp_server.py       # MCP server — third-party weather provider
 │
 ├── notebooks/
-│   ├── 00_setup_and_intro.ipynb        # Environment check, start servers, hypothesis
 │   ├── 01_api_strict_workflow.ipynb    # Hard-coded API chain — happy path then failure
 │   ├── 02_mcp_react_workflow.ipynb     # ReAct agent connecting to BOTH MCP servers
 │   └── 03_analysis_and_blog_prep.ipynb # Side-by-side comparison, charts, blog prep
@@ -113,7 +112,6 @@ python infrastructure/weather_mcp_server.py
 
 | Notebook | Purpose |
 |----------|---------|
-| `00_setup_and_intro.ipynb` | Install deps, ping all endpoints, introduce MCP concept |
 | `01_api_strict_workflow.ipynb` | Build + break the rigid API chain |
 | `02_mcp_react_workflow.ipynb` | ReAct agent solving the same edge case |
 | `03_analysis_and_blog_prep.ipynb` | Comparison table, latency chart, blog material |
