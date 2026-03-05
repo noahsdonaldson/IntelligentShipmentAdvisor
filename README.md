@@ -79,7 +79,12 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env          # add your OPENAI_API_KEY or ANTHROPIC_API_KEY
+
+# Register the venv as a named Jupyter kernel (run once)
+python -m ipykernel install --user --name=IntelligentShipmentAdvisor --display-name "Intelligent Shipment Advisor"
 ```
+
+> After running the command above, open JupyterLab and select **"Intelligent Shipment Advisor"** from the kernel picker in each notebook.
 
 ### Phase 1 — Infrastructure (Mock Servers)
 
