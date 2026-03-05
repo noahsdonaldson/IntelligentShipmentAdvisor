@@ -18,6 +18,9 @@ env/
 # Environment / secrets
 .env
 
+# Corporate proxy cert tooling — machine-specific, never commit
+build_cert_bundle.py
+
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb_checkpoints
